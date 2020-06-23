@@ -85,5 +85,8 @@ export class AppComponent {
       this.itemArray[2] !== 'empty'
     )
       this.winMessage = `${this.itemArray[2]} won`;
+    else if (!this.itemArray.includes('empty')) {
+      this.winMessage = "It's a Draw";
+    }
   };
 }
